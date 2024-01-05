@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
+	"github.com/roj1512/gogram/internal/encoding/tl"
 )
 
 type abridged struct {

@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	mtproto "github.com/amarnathcjd/gogram"
 	"github.com/pkg/errors"
+	mtproto "github.com/roj1512/gogram"
 )
 
 type Mime struct {

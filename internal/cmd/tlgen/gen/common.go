@@ -5,7 +5,7 @@ import (
 
 	"github.com/dave/jennifer/jen"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/roj1512/gogram/internal/cmd/tlgen/tlparser"
 )
 
 func (*Generator) generateMethodCallerFunc(method tlparser.Method) *jen.Statement {

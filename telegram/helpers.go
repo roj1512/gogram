@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/roj1512/gogram/internal/utils"
 
 	"github.com/pkg/errors"
 )

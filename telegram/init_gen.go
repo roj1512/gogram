@@ -2,7 +2,7 @@
 
 package telegram
 
-import tl "github.com/amarnathcjd/gogram/internal/encoding/tl"
+import tl "github.com/roj1512/gogram/internal/encoding/tl"
 
 
 func init() {

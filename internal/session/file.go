@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	aes "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
 	"github.com/pkg/errors"
+	aes "github.com/roj1512/gogram/internal/aes_ige"
+	"github.com/roj1512/gogram/internal/encoding/tl"
 )
 
 type genericFileSessionLoader struct {

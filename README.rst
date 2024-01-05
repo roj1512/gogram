@@ -47,7 +47,7 @@ Installing
 
 .. code-block:: sh
 
-  go get -u github.com/amarnathcjd/gogram
+  go get -u github.com/roj1512/gogram
 
     
 Set-Up Client

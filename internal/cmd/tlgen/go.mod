@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.5
 
 require (
-	github.com/amarnathcjd/gogram v0.0.0-20240104124909-6536dce75830
+	github.com/roj1512/gogram v0.0.0-20240104124909-6536dce75830
 	github.com/dave/jennifer v1.4.1
 	github.com/iancoleman/strcase v0.3.0
 	github.com/k0kubun/pp v3.0.1+incompatible

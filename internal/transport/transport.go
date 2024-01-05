@@ -9,10 +9,10 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mode"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
 	"github.com/pkg/errors"
+	"github.com/roj1512/gogram/internal/encoding/tl"
+	"github.com/roj1512/gogram/internal/mode"
+	"github.com/roj1512/gogram/internal/mtproto/messages"
 )
 
 type Transport interface {

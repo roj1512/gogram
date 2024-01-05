@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
+	"github.com/roj1512/gogram/internal/encoding/tl"
 )
 
 type requester interface {

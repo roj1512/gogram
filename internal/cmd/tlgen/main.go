@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/gen"
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/roj1512/gogram/internal/cmd/tlgen/gen"
+	"github.com/roj1512/gogram/internal/cmd/tlgen/tlparser"
 )
 
 const helpMsg = `tlgen

@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
-	"github.com/amarnathcjd/gogram/internal/session"
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	"github.com/roj1512/gogram/internal/encoding/tl"
+	"github.com/roj1512/gogram/internal/mtproto/messages"
+	"github.com/roj1512/gogram/internal/mtproto/objects"
+	"github.com/roj1512/gogram/internal/session"
+	"github.com/roj1512/gogram/internal/utils"
 )
 
 func (m *MTProto) sendPacket(request tl.Object, expectedTypes ...reflect.Type) (chan tl.Object, error) {

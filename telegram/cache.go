@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/roj1512/gogram/internal/utils"
 )
 
 const (

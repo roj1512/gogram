@@ -8,6 +8,7 @@ import (
 	"io"
 	"os"
 	"os/signal"
+	"runtime"
 	"strconv"
 	"strings"
 	"sync"
@@ -29,6 +30,13 @@ type CACHE struct {
 	channels   map[int64]*Channel
 	InputPeers *InputPeerCache `json:"input_peers,omitempty"`
 	logger     *utils.Logger
+}
+
+func (cache *CACHE) Pin(pinner *runtime.Pinner) {
+	pinner.Pin(cache)
+	pinner.Pin(cache.RWMutex)
+	pinner.Pin(cache.logger)
+	pinner.Pin(cache.InputPeers)
 }
 
 type InputPeerCache struct {

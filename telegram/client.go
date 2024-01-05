@@ -61,6 +61,13 @@ type Client struct {
 	Log             *utils.Logger
 }
 
+func (client *Client) Pin(pinner *runtime.Pinner) {
+	pinner.Pin(client)
+	pinner.Pin(client.Log)
+	client.MTProto.Pin(pinner)
+	client.Cache.Pin(pinner)
+}
+
 type ClientConfig struct {
 	AppID         int32
 	AppHash       string

@@ -11,6 +11,7 @@ import (
 	"os"
 	"path/filepath"
 	"reflect"
+	"runtime"
 	"strconv"
 	"strings"
 	"sync"
@@ -66,6 +67,14 @@ type MTProto struct {
 	Logger *utils.Logger
 
 	serverRequestHandlers []func(i any) bool
+}
+
+func (mtproto *MTProto) Pin(pinner *runtime.Pinner) {
+	pinner.Pin(mtproto)
+	pinner.Pin(mtproto.responseChannels)
+	pinner.Pin(mtproto.expectedTypes)
+	pinner.Pin(mtproto.PublicKey)
+	pinner.Pin(mtproto.Logger)
 }
 
 type Config struct {
